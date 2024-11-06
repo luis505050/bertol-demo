@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <title>Inicio - Bertolt Brecht</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/dropdown.css">
+    <link rel="stylesheet" href="CSS/style-n.css">
+    <link rel="stylesheet" href="CSS/fb-btn-float.css">
+    <!-- CSS/Boostraps -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- CSS/icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- script de tidio -->
+    
+</head>
+<body>
+    <header class="header-container">
+        <h2 class="head-location">Calle Real 869, Chilca, Huancayo-JUNIN</h2>
+        <nav class="navbar">            
+            <div class="logo"><img src="IMGS/logo_bert.png"></div>
+            <div class="hamburger" id="hamburger">&#9776;</div>
+            <ul class="nav-links " id="navLinks">
+                <li class="dropdown"><a href="index.html">Inicio</a></li>
+                <li class="dropdown ">
+                    <a href="conocenos.html" class="dropbtn " >Conócenos</a>
+                    <div class="dropdown-content">
+                        <a href="bienvenida.html">Mensaje</a>
+                        <a href="reglamento.html">Reglamento</a>
+                    </div>
+                </li>
+                <li class="dropdown ">
+                    <a href="inicial.html" class="dropbtn">Niveles</a>
+                    <div class="dropdown-content">
+                        <a href="inicial.html">Inicial</a>
+                        <a href="primaria.html">Primaria</a>
+                        <a href="secundaria.html">Secundaria</a>
+                    </div>
+                </li>
+                <li class=""><a href="contactenos.html">Contáctenos</a></li>
+                <li class=""><a href="matriculas.html">Matrículas</a></li>                
+            </ul>
+        </nav>
+        <script src="JS/dropdown.js"></script>
+    </header>    
+    <section class="container-carousel-saludo">
+        <div class="conteiner-carrusel">
+            <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+                <div class="carousel-inner" id="sec-img">
+                  <div class="carousel-item active">
+                    <img src="IMGS/441405279_893574526112827_475682732151513234_n.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="IMGS/pasacalle.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="IMGS/pasacalle2 - copia.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+    </section>
+    <script src="JS/scroll_nav.js"></script>
+    <!-- Filosofia brechtiana -->
+     
+    <div class="title">        
+        <h2>Filosofia Brechtiana</h2>
+    </div>
+    <section class="container-filosofia">        
+        <div class="content">
+            <div class="media-container">
+                <div class="image-wrapper">
+                    <img src="IMGS/SOLESE.JPG" alt="Imagen de Filosofía" class="media-item">
+                    <button class="btn-overlay"><a href="reglamento.html">Leer Más</a></button>
+                </div>
+            </div>
+            <div class="media-container">
+                <video controls class="media-item">
+                    <source src="VIDEOS/ejemplo-video.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+            </div>
+        </div>
+    </section>
+   
+    <!-- Contenedor de noticias y eventos -->
+    <section class="noticias-eventos">
+        <h2>Noticias y Eventos</h2>
+        <div class="noticias-container">
+            <div class="noticia">
+                <img src="IMGS/pasacalle.jpg" alt="Imagen de la noticia 1">
+                <h3>Desfile de Inicial</h3>
+                <p>Descripción breve de la noticia 1. Más detalles sobre la noticia...</p>
+                <a href="https://www.facebook.com/100063808637179/videos/347482098349722/" class="leer-mas">Leer más</a>
+            </div>
+            <div class="noticia">
+                <img src="IMGS/441405279_893574526112827_475682732151513234_n.jpg" alt="Imagen de la noticia 2">
+                <h3>Título de la Noticia 2</h3>
+                <p>Descripción breve de la noticia 2. Más detalles sobre la noticia...</p>
+                <button id="ver-mas" class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight2" aria-controls="offcanvasRight2">Ver más...</button>                
+            </div>
+            <div class="noticia">
+                <img src="IMGS/pasacalle2.jpg" alt="Imagen de la noticia 3">
+                <h3>Título de la Noticia 3</h3>
+                <p>Descripción breve de la noticia 3. Más detalles sobre la noticia...</p>
+                <button id="ver-mas" class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight3" aria-controls="offcanvasRight3">Ver más...</button>                
+            </div>   
+            <div class="noticia">
+                <img src="IMGS/pasacalle.jpg" alt="Imagen de la noticia 1">
+                <h3>Título de la Noticia 4</h3>
+                <p>Descripción breve de la noticia 1. Más detalles sobre la noticia...</p>
+                <a href="#" class="leer-mas">Leer más</a>
+            </div>
+            <div class="noticia">
+                <img src="IMGS/441405279_893574526112827_475682732151513234_n.jpg" alt="Imagen de la noticia 2">
+                <h3>Título de la Noticia 5</h3>
+                <p>Descripción breve de la noticia 2. Más detalles sobre la noticia...</p>
+                <a href="#" class="leer-mas">Leer más</a>
+            </div>
+            <div class="noticia">
+                <img src="IMGS/pasacalle2.jpg" alt="Imagen de la noticia 3">
+                <h3>Título de la Noticia 6</h3>
+                <p>Descripción breve de la noticia 3. Más detalles sobre la noticia...</p>
+                <a href="#" class="leer-mas">Leer más</a>
+            </div>      
+            <div class="noticia">
+                <img src="IMGS/pasacalle2.jpg" alt="Imagen de la noticia 3">
+                <h3>Título de la Noticia 7</h3>
+                <p>Descripción breve de la noticia 3. Más detalles sobre la noticia...</p>
+                <a href="#" class="leer-mas">Leer más</a>
+            </div>  
+        </div>
+    </div>
+    <!-- Contenido de las noticias -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel"><b>Ganadores de festidanzas</b> </h5>
+            <button type="button" class="btn-close text-reset-end" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <hr >
+            ...
+        </div>
+    </div>
+    <!--  -->
+    <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasRight2" aria-labelledby="offcanvasRight2Label">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasRight2Label"><b>Nuestro aniversario</b> </h5>
+            <button type="button" class="btn-close text-reset-end" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <hr >
+            ...
+        </div>
+    </div>
+    <!--  --><div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight3" aria-labelledby="offcanvasRight3Label">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasRight3Label"><b>Formacion unica</b> </h5>
+            <button type="button" class="btn-close text-reset-end" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <hr >
+            ...
+        </div>
+    </div>
+    <!--Paginacion de los eventos noticias  -->
+    <div class="paginacion"></div>
+    <script src="JS/script-n.js"></script>
+    </section>
+    <!--  -->
+    <section class="container-imagenes-y-tips">    
+        <h2>TIPS DE PSICOLOGIA</h2>
+        <div class="carrusel-tips">
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="IMGS/Psicologia/embarazo-precoz.png" class="img-fluid rounded-start"
+                            alt="">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">EMBARAZO PRECOZ</h5>
+                            <p class="card-text">
+                                El embarazo precoz es un fenómeno social y de salud pública que se refiere
+                                 a la gestación que ocurre en adolescentes, generalmente antes de los 18 años.
+                            </p>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#pdfModal">
+                                    Ver PDF
+                                  </button>
+                        </div>
+                    </div>
+                    <!-- MODAL PDF -->
+                    <div class="modal fade" id="pdfModal" tabindex="-1" aria-labelledby="pdfModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="pdfModalLabel">Cuidado con el embarazo precoz en la adolecencia</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                                <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTptGLid8UVFgZYrJSh9Fm7Dp8O2NKsIOU09edAo09K3pxDwVooUIqqP_67r9vdMA/embed?start=true&loop=false&delayms=30000" 
+                                frameborder="0" width="780" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3" style="max-width: 640px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="IMGS/Psicologia/bullying.jpg" class="img-fluid rounded-start"
+                            alt="">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Bullying Acoso Escolar</h5>
+                            <p class="card-text">
+                                El bullying es un fenómeno preocupante que afecta a personas de todas las edades,
+                                 caracterizado por actos de agresión, acoso o intimidación de manera repetida.
+                            </p>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#pptModal2">
+                                    Ver PDF
+                                  </button>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="pptModal2" tabindex="-1" aria-labelledby="pptModalLabel2" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="pptModalLabel2">Bullying</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                                <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQu79AzrCDzVPQJknPlYPRW0yIDhfJao-OUJLHlqXNlYCg7dVC77OqbWQldhyCs9w/embed?start=false&loop=false&delayms=30000" 
+                                frameborder="0" width="780" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>          
+    </section>
+
+    <section class="container-info-conocenos">
+        <h2>Conócenos</h2>
+        <p>Somos una institución que contribuye con los fines de la educación en su quehacer (Misión)
+            y en su proyección (Visión) <br> en concordancia con la Ley de Educación Nº 28044, art. 9, 
+           al formar personas capaces de lograr su realización  con identidad, <br> autoestima, su integración 
+           como ciudadano y contribuya a formar a una sociedad democrática, solidaria, <br> justa, inclusiva, 
+           próspera, tolerante y forjadora de una cultura de paz.</p>           
+           <button class="btn btn-sucess my-3"> <a href="conocenos.html"> Leer más</a></button>
+    </section>
+
+    <section class="container-videos">
+        <h2>Video Institucional</h2>
+        <video controls>
+            <source src="VIDEOS/WhatsApp Video 2024-08-12 at 17.50.29.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de videos.
+        </video>
+    </section>
+
+    <section class="container-favoritismo">
+        <h2>¿Por qué elegirnos?</h2>
+        <p>ofercemos una exigencia academica y una formacion integral en valores, a atravez de un entorno dinamico y diverso <br>
+            desarrollando las capacidades y habilidades para lograr que cada estudiante alcanze su maximo potencial.
+            </p>
+        <section id="por-que-elegirnos" class="container-sc my-5">
+            <div class="text-center">
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <h4>Experiencia Educativa</h4>
+                    <p>Con 26 años de experiencia al servicio de educacion en centro de nuestro pais,
+                         nuestro colegio tiene como objetivo el bienestar, excelencia y formación 
+                         integral de nuestros estudiantes.
+                    </p>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <h4>Educación Integral</h4>
+                    <p>Nuestros estudiantes reciben una educación integral con formacion de valores, 
+                        basada en principios de eduacación peruana y de respeto a la vida.
+                    </p>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <h4>Personal Calificado</h4>
+                    <p>Contamos con personal alatamente capacitado y formados con las nuevas tendencias 
+                        de la educación.
+                    </p>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <h4>Infraestructura moderna</h4>
+                    <p>Contamos con la más moderna infraestructura, ambientes acogedores y talleres recreativos 
+                        para el desarrollo integral de nuestros estudiantes, como exige el mundo moderno.
+                    </p>
+                </div>
+            </div>            
+        </section>
+        
+    </section>
+    <a href="https://www.facebook.com/p/Colegio-Bertolt-Brecht-Huancayo-100063808637179/" target="_blank" class="floating-button" title="Ir a Facebook">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+    <br>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <br>
+    <!-- boostraps -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--  -->
+    <footer class="container-copyright">
+        <p>&copy; 2024 Colegio Bertolt Brecht. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

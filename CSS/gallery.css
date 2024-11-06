@@ -1,0 +1,46 @@
+
+.gallery-contain {
+    top: 25px ;
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    padding: 20px 0;
+    height: 350px ;
+}
+
+.gallery-track {
+    display: flex;
+    gap: 10px;
+    transition: transform 0.5s ease;
+    justify-content: center;
+}
+
+.gallery-item {
+    flex: 0 0 auto;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.gallery-item img {
+    width: 200px ;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item.active {
+    transform: scale(1.2); /* Escalado de la imagen activa */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .gallery-item {
+        width: 30%;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-item {
+        width: 50%;
+    }
+}

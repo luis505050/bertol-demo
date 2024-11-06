@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrículas - Colegio XYZ</title>
+    <link rel="stylesheet" href="CSS/dropdown.css">
+    <link rel="stylesheet" href="CSS/matriculas.css">
+</head>
+<body>
+<section class="matriculas">
+    <h1>Matrículas Abiertas</h1>
+    <p>¡Bienvenidos al proceso de inscripción para el año escolar 202!
+         Aquí te guiamos paso a paso para inscribir a tu hijo(a) en el Colegio de educación privada
+         <strong>"Bertol Brecht"</strong>.</p>
+
+    <div class="steps">
+        <div class="step">
+            <h2>Paso 1: Completa el Formulario de Preinscripción</h2>
+            <button onclick="openModal()">Llenar Formulario</button>
+        </div>
+        <div class="step">
+            <h2>Paso 2: Reúne los Documentos Necesarios</h2>
+            <ul>
+                <li>Acta de nacimiento</li>
+                <li>Comprobante de domicilio</li>
+                <li>Identificación de los padres o tutores</li>
+            </ul>
+        </div>
+        <div class="step">
+            <h2>Paso 3: Confirma tu Cita de Entrevista</h2>
+            <p>Te contactaremos para agendar una entrevista en la que conoceremos a tu hijo y resolveremos todas tus dudas.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Modal -->
+<div class="modal" id="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Formulario de Preinscripción</h2>
+        <form id="enrollmentForm">
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+            
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="nivel">Nivel Educativo:</label>
+            <select id="nivel" name="nivel" required>
+                <option value="preescolar">Preescolar</option>
+                <option value="primaria">Primaria</option>
+                <option value="secundaria">Secundaria</option>
+            </select>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</div>
+
+<script src="JS/matriculas.js"></script>
+</body>
+</html>
