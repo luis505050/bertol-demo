@@ -12,6 +12,11 @@
         width: 75% ;
     }
 }
+a.disabled{
+    pointer-events: none;
+    color: gray;
+    text-decoration: none;
+}
 .navbar {
     max-width: 100% ;
     padding: 0 ;
